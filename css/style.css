@@ -1,0 +1,43 @@
+body {
+    background-color: green;
+    padding: 0px;
+    margin: 0px;
+}
+
+container {
+    width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 7px;
+    font-size: 50px;
+}
+
+.score, .timer, .level {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.game-container {
+    background-color: rgb(166, 187, 166);
+    padding-bottom: 50px;
+    margin-top: 120px;
+    margin-left: 14%;
+    min-height: 500px;
+    width: 70%;
+    
+}
+
+.flipping-cards {
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+}
+
