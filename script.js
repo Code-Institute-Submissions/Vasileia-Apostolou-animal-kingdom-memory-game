@@ -29,15 +29,15 @@ function myContainer() {
 // Hide Intro Overlay 
 function closeIntroContent() {
     $(".intro-to-game").fadeOut();
+    initialise();
 }
 
 
 function initialise() {
     
-    animalCards = shuffle(animalCards);
 
     for (let i=0; i<10; i++) {
-       let card = "<div class='card'><div class='flip-card' id='card"+i+"' onclick='selectedCard("+i+")'><div class='flip-card-front'></div><div class='flip-card-back'></div></div></div>";
+       let card = "<div class='flip-card'><div class='flip-card-inner' id='card"+i+"' onclick='selectedCard("+i+")'><div class='flip-card-front'></div><div class='flip-card-back'></div></div></div>";
 
        $(".game-container").append(card);
     }
