@@ -4,30 +4,42 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
 
 	<title>Jungle Memory Game</title>
 </head>
 
 <body>
-	<div class="intro-to-game">
 
-		<div class="intro-content">
-			<h1 class="overlay-heading" class="hvr-glow" onclick="closeIntroContent()">Click To Start</h1>
+
+
+<!-- HEADER SECTION CONTAINING MAIN PAGE HEADING -->
+<header>
+<h1 class="game-heading">Animal Kingdom</h1>
+</header>
+
+
+
+<!-- INTRO TO START THE GAME SECTION -->
+<section class="intro-to-game">
+<div class="intro-content">
+			<h1 class="overlay-heading" onclick="closeIntroContent()">Click To Start</h1>
 		</div>
 	</div>
-
-    <div id="game-over-content" class="game-over">
+ <!-- GAME OVER OVERLAY -->
+      <!--<div id="game-over-content" class="game-over">
 			<h1 class="game-over-heading" onclick="closeIntroContent()">GAME OVER</h1>
             <h3 id="click-to-restart-text">Click To Restart</h3>
 		</div>
-	</div>
+	</div>-->
+</section>
+	
 
 
-	<div class="container">
-		<h1>Animal Kingdom</h1>
-
+<!-- DECK OF CARDS SECTION -->
+	<section id="cards" class="container">
+		
 		<div class="game-details">
 			<div class="score">Score: 0/4
 			</div>
@@ -38,8 +50,9 @@
 		</div>
 		<div class="game-container">
 			<div class="flipping-cards"></div>
+
 			<!--FlippingCards-->
-			<div class="flip-card">
+			<!--<div class="flip-card">
 				<div class="flip-card-inner">
 					<div class="flip-card-front">
 					</div>
@@ -109,14 +122,12 @@
 					<div class="flip-card-back">
 					</div>
 				</div>
-			</div>
+			</div>-->
+	
+    </div>
+	</section>
 
-           
 
-
-
-
-		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.js"

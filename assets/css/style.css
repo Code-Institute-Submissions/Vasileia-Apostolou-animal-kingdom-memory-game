@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Flavors&family=Frijole&family=Lobster&family=Oleo+Script+Swash+Caps&display=swap');
 
   body {
-    background: url("../assets/images/option3.jpg");
+    background: url("/assets/images/option3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +17,7 @@
 
 }
 
-h1 {
+.game-heading {
     text-align: center;
     padding-top: 6%;
     font-size: 55px;
@@ -155,6 +155,7 @@ h1 {
     position: fixed;
     z-index: 5;
     background-color: rgba(0, 0, 0, 0.8);
+    display: none;
 }
 
 .game-over-heading {
@@ -163,6 +164,7 @@ h1 {
    font-size: 10vw;
    color: aliceblue;
    text-shadow: 2px 2px 3px green;
+   display: none;
 }
 
 #click-to-restart-text {
