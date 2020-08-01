@@ -32,14 +32,23 @@ function closeIntroContent() {
     initialise();
 }
 
-
+// Cards
 function initialise() {
     
 
-    for (let i=0; i<10; i++) {
+    for (let i=0; i<12; i++) {
        let card = "<div class='flip-card'><div class='flip-card-inner' id='card"+i+"' onclick='selectedCard("+i+")'><div class='flip-card-front'></div><div class='flip-card-back'></div></div></div>";
 
        $(".game-container").append(card);
     }
 }
 
+
+function selectedCard(id) {
+    console.log("card id" , id);
+    let cardID = "#card" + id;
+
+    if(!$(cardID).hasClass("onclick-cards")) {
+        $(cardID).addClass("onclick-cards");
+    }
+}
