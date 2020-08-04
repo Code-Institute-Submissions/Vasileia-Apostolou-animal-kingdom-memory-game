@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 0px;
     margin: 0px;
 }
@@ -19,16 +19,17 @@
 
 .game-heading {
     text-align: center;
-    padding-top: 1%;
-    font-size: 55px;
+    margin-right: 3%;
+    font-size: 65px;
     font-family: 'Cinzel Decorative', cursive;
-    text-shadow: 1px 1px 2px green;
+    text-shadow: 1px 1px 2px #fff;
 }
 
 .score, .timer, .level {
-    width: 33%;
+    width: 25%;
     float: left;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    margin-left: 5%;
     box-sizing: border-box;
     font-size: 30px;
     text-align: center;
@@ -38,8 +39,8 @@
 }
 
 .game-container {
-    padding-bottom: 50px;
-    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
     margin-left: 10%;
     min-height: 352px;
     width: 80%;
@@ -93,7 +94,7 @@ border: 2px solid #000;
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-background-image: url("/assets/images/butterflies/butterfly1.jpg");
+background-image: url("/assets/images/butterflies/butterfly18.jpg");
 /*background-color: black;*/
   transform: rotateY(0deg);
   transition: 0.5s linear 0s;
