@@ -41,8 +41,8 @@
     padding-bottom: 50px;
     margin-top: 30px;
     margin-left: 10%;
-    min-height: 252px;
-    width: 75%;
+    min-height: 352px;
+    width: 80%;
   
     
 }
@@ -63,9 +63,8 @@
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-  width: 130px;
+  width: 127px;
   height: 127px;
-  padding-bottom: 50px;
   text-align: center;
   transition: transform 0.5s;
 transform-style: preserve-3d;
@@ -94,9 +93,13 @@ border: 2px solid #000;
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: palevioletred;
+background-image: url("/assets/images/butterflies/butterfly1.jpg");
+/*background-color: black;*/
   transform: rotateY(0deg);
   transition: 0.5s linear 0s;
+  width: 125px;
+  height: 125px;
+  
 }
 
 
