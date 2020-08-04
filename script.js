@@ -1,5 +1,5 @@
 let animalCards = ['1', '2', '3', '4', '5', '6', '1', '2','3', '4', '5', '6'];
-let bgBirdSound = new Audio ("assets/sounds/woods.wav");
+let bgBirdSound = new Audio ("assets/sounds/jungle.wav");
 
 // Hide Intro Overlay 
 function closeIntroContent() {
