@@ -94,7 +94,6 @@ border: 2px solid #000;
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  /*background: url("/assets/images/option3.jpg");*/
   background-color: palevioletred;
   transform: rotateY(0deg);
   transition: 0.5s linear 0s;
