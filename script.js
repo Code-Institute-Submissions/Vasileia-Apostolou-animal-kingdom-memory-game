@@ -1,43 +1,21 @@
-let animalCards = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D','E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J', 'K', 'K'];
-
-/*let gameValues = [];
-let memoryIds = [];
-let flippedCards = [];
-
-Array.prototype.gameShuffle = function() {
-    let a = this.length, j,temp;
-
-    while(--a; <0) {
-        j = Math.floor(Math.random() * (i+1));
-        temp = this[j];
-        this[j] = this [a];
-        this[a] = temp;
-    }
-}
-
-function myContainer() {
-    flippedCards = 0;
-    let output= '';
-
-    gameArray.gameShuffle();
-    for (let i=0 i<gameArray.length; i++) {
-        output += ''
-    }
-} */
-
+let animalCards = ['1', '2', '3', '4', '5', '6', '1', '2','3', '4', '5', '6'];
+let bgBirdSound = new Audio ("assets/sounds/woods.wav");
 
 // Hide Intro Overlay 
 function closeIntroContent() {
     $(".intro-to-game").fadeOut();
     initialise();
+    bgBirdSound.play();
+
 }
 
 // Cards
 function initialise() {
-    
 
+    animalCards = shuffle(animalCards);
+    
     for (let i=0; i<12; i++) {
-       let card = "<div class='flip-card'><div class='flip-card-inner' id='card"+i+"' onclick='selectedCard("+i+")'><div class='flip-card-front'></div><div class='flip-card-back'></div></div></div>";
+       let card = "<div class='flip-card'><div class='flip-card-inner' id='card"+i+"' onclick='selectedCard("+i+", "+animalCards[i]+")'><div class='flip-card-front'></div><div class='flip-card-back' style='background-image:url(assets/images/animals/animal"+animalCards[i]+".jpg')></div></div></div>";
 
        $(".game-container").append(card);
     }
@@ -51,4 +29,21 @@ function selectedCard(id) {
     if(!$(cardID).hasClass("onclick-cards")) {
         $(cardID).addClass("onclick-cards");
     }
+}
+
+function shuffle(arra1) {
+    var ctr = arra1.length, temp, index;
+
+// While there are elements in the array
+    while (ctr > 0) {
+// Pick a random index
+        index = Math.floor(Math.random() * ctr);
+// Decrease ctr by 1
+        ctr--;
+// And swap the last element with it
+        temp = arra1[ctr];
+        arra1[ctr] = arra1[index];
+        arra1[index] = temp;
+    }
+    return arra1;
 }
