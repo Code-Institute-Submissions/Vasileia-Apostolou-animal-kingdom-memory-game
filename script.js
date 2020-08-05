@@ -1,12 +1,20 @@
 // Variables
 let animalCards = ['1', '2', '3', '4', '5', '6', '1', '2','3', '4', '5', '6'];
+
+// Variables for cards
 let flipNumber = 0;
+let clickedCards = 0;
+let firstSelectedCard;
+let secondSelectedCard;
+let previousCard;
+
 
 // Variables for sounds
 let bgBirdSound = new Audio ("assets/sounds/jungle1.wav");
 let flippingSound = new Audio ("assets/sounds/click4.mp3");
 let winningSound = new Audio ("assets/sounds/winning-sound.wav");
 let losingSound = new Audio ("assets/sounds/losing-sound.mp3");
+
 
 // Variables for timer countdown
 let countdown;
@@ -36,10 +44,10 @@ function initialise() {
 
        $(".game-container").append(card);
     }
-    countdown(seconds);
+
 }
 
-function selectedCard(id) {
+function selectedCard(id,current) {
     console.log("card id" , id);
     let cardID = "#card" + id;
 
@@ -47,10 +55,28 @@ function selectedCard(id) {
         $(cardID).addClass("onclick-cards");
         flippingSound.play();
 
-        flipNumber++;
+         clickedCards++;
 
-        if(flipNumber ==1){
-            
+        if(clickedCards ==1){
+     firstSelectedCard = current;
+     previousCard = cardID;
+        }
+
+        if(clickedCards ==2) {
+            secondSelectedCard = current;
+
+            if(firstSelectedCard = secondSelectedCard) {
+                console.log("Match")
+            }else {
+                setTimeout(function() {
+                 $(cardID).removeClass("onclick-cards");
+                 $(previousCard).removeClass("onclick-cards");
+                  
+                },1000); 
+
+                clickedCards=0;
+            }
+           
         }
     }
 }
