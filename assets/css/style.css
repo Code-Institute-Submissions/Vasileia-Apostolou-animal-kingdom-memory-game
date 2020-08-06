@@ -20,7 +20,7 @@
 .game-heading {
     text-align: center;
     margin-right: 3%;
-    font-size: 55px;
+    font-size: 45px;
     font-family: 'Cinzel Decorative', cursive;
     text-shadow: 1px 1px 2px #fff;
 }
@@ -168,8 +168,7 @@ background-image: url("/assets/images/butterflies/butterfly18.jpg");
 }
 
 
-
-@media only screen and (max-width: 800px) {
+/*@media only screen and (max-width: 800px) {
   .container {
       width: 100%;
   }
@@ -180,4 +179,4 @@ background-image: url("/assets/images/butterflies/butterfly18.jpg");
   .intro-content {
       width: 100%;
   }
-}
+}*/

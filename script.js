@@ -72,6 +72,7 @@ function selectedCard(id,current) {
                 clickedCards=0;
                 },500);
                 console.log("Match");
+                 winningSound.play();
             }else {
                 setTimeout(function() {
                  $(cardID).removeClass("onclick-cards");
