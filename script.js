@@ -1,5 +1,5 @@
 // Variables
-let animalCards = ['1', '2', '3', '4', '5', '6', '1', '2','3', '4', '5', '6'];
+let animalCards = ['1', '2', '3', '4', '5', '6', '7', '8', '1', '2','3', '4', '5', '6', '7', '8'];
 
 // Variables for cards
 let flipNumber = 0;
@@ -7,6 +7,7 @@ let clickedCards = 0;
 let firstSelectedCard;
 let secondSelectedCard;
 let previousCard;
+let score = 0;
 
 
 // Variables for sounds
@@ -39,12 +40,12 @@ function initialise() {
 
     animalCards = shuffle(animalCards);
     
-    for (let i=0; i<12; i++) {
+    for (let i=0; i<16; i++) {
        let card = "<div class='flip-card'><div class='flip-card-inner' id='card"+i+"' onclick='selectedCard("+i+", "+animalCards[i]+")'><div class='flip-card-front'></div><div class='flip-card-back' style='background-image:url(assets/images/animals/animal"+animalCards[i]+".jpg')></div></div></div>";
 
        $(".game-container").append(card);
     }
-
+countdownNow(seconds);
 }
 
 function selectedCard(id,current) {
@@ -57,24 +58,28 @@ function selectedCard(id,current) {
 
          clickedCards++;
 
-        if(clickedCards ==1){
+        if(clickedCards == 1){
      firstSelectedCard = current;
      previousCard = cardID;
         }
 
-        if(clickedCards ==2) {
+        if(clickedCards == 2) {
             secondSelectedCard = current;
 
-            if(firstSelectedCard = secondSelectedCard) {
-                console.log("Match")
+            if(firstSelectedCard == secondSelectedCard) {
+                score++;
+                setTimeout(function(){
+                clickedCards=0;
+                },500);
+                console.log("Match");
             }else {
                 setTimeout(function() {
                  $(cardID).removeClass("onclick-cards");
                  $(previousCard).removeClass("onclick-cards");
-                  
-                },1000); 
+                  clickedCards=0;
+                },500); 
 
-                clickedCards=0;
+                /*clickedCards=0;*/
             }
            
         }
@@ -100,7 +105,7 @@ function shuffle(arra1) {
     return arra1;
 }
 
-''
+
 // Countdown Function
 function countdownNow(seconds) {
    secondsLeft.text(secondsInput);
@@ -108,11 +113,11 @@ function countdownNow(seconds) {
    if (secondsInput == 0) {
        clearTimeout(countdown);
        setTimeout(function() {
-           showResult();
+           /*showResult();*/
        }, 1000);
        return;
    }
-   secondsInput --;
+   secondsInput--;
    countdown = setTimeout(function() {
        countdownNow(seconds);
    },1000);
