@@ -23,6 +23,9 @@ let secondsInput = 60;
 let seconds = secondsInput;
 let secondsLeft = $(".seconds-left");
 
+// Variable for score
+let scoreNumber = $(".successful-match");
+
 
 
 
@@ -68,6 +71,8 @@ function selectedCard(id,current) {
 
             if(firstSelectedCard == secondSelectedCard) {
                 score++;
+                 $(".successful-match").text(score+"/8");
+                
                 setTimeout(function(){
                 clickedCards=0;
                 },500);
@@ -80,7 +85,11 @@ function selectedCard(id,current) {
                   clickedCards=0;
                 },500); 
 
-                /*clickedCards=0;*/
+            
+            
+            
+            
+              
             }
            
         }
@@ -107,7 +116,7 @@ function shuffle(arra1) {
 }
 
 
-// Countdown Function
+// Countdown 60seconds Function
 function countdownNow(seconds) {
    secondsLeft.text(secondsInput);
 
@@ -123,3 +132,17 @@ function countdownNow(seconds) {
        countdownNow(seconds);
    },1000);
 }
+
+
+// Mute/Unmute Background Sound
+$(".sound-button").click(function() {
+    bgBirdSound.pause();
+    $(".sound-button").hide();
+    $(".mute-sound-button").show();
+});
+ 
+$(".mute-sound-button").click(function() {
+    bgBirdSound.play();
+    $(".mute-sound-button").hide();
+    $(".sound-button").show();
+});
