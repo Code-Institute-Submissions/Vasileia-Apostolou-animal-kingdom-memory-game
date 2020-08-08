@@ -33,7 +33,7 @@ let scoreNumber = $(".successful-match");
 function closeIntroContent() {
     $(".intro-to-game").fadeOut();
     initialise();
-    bgBirdSound.play();
+    /*bgBirdSound.play();*/
 }
 
 

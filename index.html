@@ -44,23 +44,39 @@
 		<div class="game-details">
 			<div class="score">Score: <span class="successful-match">0/8</span>
 			</div>
+            <div>
+            <button class="sound-button"><i class="fas fa-volume-up"></i></button>
+            <button class="mute-sound-button"><i class="fas fa-volume-mute"></i></button>
+            </div>
 			<div class="timer">Timer: <span class="seconds-left">60</span>
 			</div>
-			<div class="level">Level: <span class="level-played">1</span>
-			</div>
+			<!--<div class="level">Level: <span class="level-played">1</span>
+			</div>-->
 		</div>
 		<div class="game-container">
     </div>
-    <button class="sound-button"><i class="fas fa-volume-up"></i></button>
-    <button class="mute-sound-button"><i class="fas fa-volume-mute"></i></button>
-	</section>
+
+
+	<!-- WINNING/LOSING POP UP -->
+	<section id="game-results">
+		<div class="winning-container">
+			<div class="winning-popup">
+				<iframe class="clapping-iframe" src="https://gifer.com/embed/2k" allowFullScreen></iframe>
+				<h2 class="you-won-heading">Congradulations!</h2>
+				<p class="you-won-p">You successfully matched all the cards</p>
+                <button class="play-again-button">Play Again</button>
+            <button class="exit-button">Exit</button>
+			</div>
+		</div>
+    </section>
+   
 
 
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.js"
 		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 
 </html>
