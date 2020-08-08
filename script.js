@@ -30,7 +30,7 @@ let secondsLeft = $(".seconds-left");
 function closeIntroContent() {
     $(".intro-to-game").fadeOut();
     initialise();
-    /*bgBirdSound.play();*/
+    bgBirdSound.play();
 }
 
 
