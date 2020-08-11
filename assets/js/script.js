@@ -15,6 +15,7 @@ let bgBirdSound = new Audio ("assets/sounds/jungle1.wav");
 let flippingSound = new Audio ("assets/sounds/click4.mp3");
 let winningSound = new Audio ("assets/sounds/winning-sound.wav");
 let losingSound = new Audio ("assets/sounds/losing-sound.mp3");
+let congratsSound = new Audio ("assets/sounds/congrats.wav");
 
 
 // Variables for timer countdown
@@ -26,6 +27,12 @@ let secondsLeft = $(".seconds-left");
 // Variable for score
 let scoreNumber = $(".successful-match");
 
+// Variables for results
+let youLost = false;
+let gameResults = $(".game-results");
+let winningPopup = $(".winning-popup");
+let playAgainButton = $(".play-again-button");
+let exitButton = $(".exit-button");
 
 
 
@@ -33,8 +40,24 @@ let scoreNumber = $(".successful-match");
 function closeIntroContent() {
     $(".intro-to-game").fadeOut();
     initialise();
-    /*bgBirdSound.play();*/
+    bgBirdSound.play();
 }
+
+
+
+// Mute/Unmute Background Sound
+$(".sound-button").click(function() {
+    bgBirdSound.pause();
+    $(".sound-button").hide();
+    $(".mute-sound-button").show();
+});
+ 
+$(".mute-sound-button").click(function() {
+    bgBirdSound.play();
+    $(".mute-sound-button").hide();
+    $(".sound-button").show();
+});
+
 
 
 
@@ -72,6 +95,13 @@ function selectedCard(id,current) {
             if(firstSelectedCard == secondSelectedCard) {
                 score++;
                  $(".successful-match").text(score+"/8");
+                if (score == 10) {
+                    clearTimeout(countdownNow);
+                    setTimeout(function () {
+                        showResult();
+                    },1000);
+                    return;
+                }
                 
                 setTimeout(function(){
                 clickedCards=0;
@@ -123,7 +153,7 @@ function countdownNow(seconds) {
    if (secondsInput == 0) {
        clearTimeout(countdown);
        setTimeout(function() {
-           /*showResult();*/
+           showResult();
        }, 1000);
        return;
    }
@@ -134,15 +164,19 @@ function countdownNow(seconds) {
 }
 
 
-// Mute/Unmute Background Sound
-$(".sound-button").click(function() {
-    bgBirdSound.pause();
-    $(".sound-button").hide();
-    $(".mute-sound-button").show();
-});
- 
-$(".mute-sound-button").click(function() {
-    bgBirdSound.play();
-    $(".mute-sound-button").hide();
-    $(".sound-button").show();
-});
+// Winning / Losing Pop Up
+function showResult() {
+  youLost = true;
+  gameResults.show();
+   
+  if (score == 8) {
+   winningPopup.show();
+   play-again-button.show();
+   exitButton.show();
+   congratsSound.play();
+  }
+
+  bgBirdSound.pause(); 
+}
+
+
