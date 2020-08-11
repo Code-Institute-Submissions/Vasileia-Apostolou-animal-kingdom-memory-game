@@ -164,11 +164,10 @@ border: 2px solid #000;
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
 background-image: url("../images/butterflies/butterfly18.jpg");
-/*background-color: black;*/
   transform: rotateY(0deg);
   transition: 0.5s linear 0s;
-  width: 125px;
-  height: 125px;
+  width: 127px;
+  height: 127px;
   cursor: pointer;
 }
 
@@ -230,7 +229,7 @@ background-image: url("../images/butterflies/butterfly18.jpg");
 
 
 /* OVERLAYS */
-.intro-to-game {
+.intro-to-game, .game-results-overlay {
     top: 0;
     width: 100%;
     height: 100%;
@@ -239,6 +238,8 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     background-color: rgba(1, 19, 19, 0.8);
     
 }
+
+
 
 
 .overlay-heading {

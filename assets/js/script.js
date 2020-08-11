@@ -186,4 +186,13 @@ function showResult() {
   bgBirdSound.pause(); 
 }
 
+playAgainButton.click(function() {
+    window.location.reload();
+}); 
+tryAgainButton.click(function() {
+    window.location.reload();
+}); 
+exitButton.click(function() {
+    fadeOut();
+});
 
