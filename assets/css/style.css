@@ -193,7 +193,7 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     z-index: 100;
     border: 2px solid #000;
     border-radius: 10px;
-   
+   display: none;
    }
   
 

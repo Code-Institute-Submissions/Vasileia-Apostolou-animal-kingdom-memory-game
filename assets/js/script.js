@@ -33,6 +33,8 @@ let gameResults = $(".game-results");
 let winningPopup = $(".winning-popup");
 let playAgainButton = $(".play-again-button");
 let exitButton = $(".exit-button");
+let losingPopup = $(".losing-popup");
+let tryAgainButton = $(".try-again-button");
 
 
 
@@ -171,9 +173,14 @@ function showResult() {
    
   if (score == 8) {
    winningPopup.show();
-   play-again-button.show();
+   playAgainButton.show();
    exitButton.show();
    congratsSound.play();
+
+  } else {
+   losingPopup.show();
+   tryAgainButton.show();
+   losingSound.play();
   }
 
   bgBirdSound.pause(); 
