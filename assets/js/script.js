@@ -97,7 +97,7 @@ function selectedCard(id,current) {
             if(firstSelectedCard == secondSelectedCard) {
                 score++;
                  $(".successful-match").text(score+"/8");
-                if (score == 10) {
+                if (score == 8) {
                     clearTimeout(countdownNow);
                     setTimeout(function () {
                         showResult();
@@ -116,12 +116,6 @@ function selectedCard(id,current) {
                  $(previousCard).removeClass("onclick-cards");
                   clickedCards=0;
                 },500); 
-
-            
-            
-            
-            
-              
             }
            
         }
