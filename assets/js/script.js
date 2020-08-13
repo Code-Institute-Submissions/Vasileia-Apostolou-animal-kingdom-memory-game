@@ -8,6 +8,8 @@ let firstSelectedCard;
 let secondSelectedCard;
 let previousCard;
 let score = 0;
+ 
+const exitPopup = document.querySelectorAll(['data-exit-popup'])
 
 
 // Variables for sounds
