@@ -256,7 +256,7 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     background-color: rgba(1, 19, 19, 0.8); 
 }
 
-#popup-overlay {
+/*#popup-overlay {
     position: fixed;
     top: 0;
     right: 0;
@@ -264,7 +264,7 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     bottom: 0;
     background-color: rgba(1, 19, 19, 0.7); 
    
-}
+}*/
 
 
 
