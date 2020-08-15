@@ -8,17 +8,13 @@ let firstSelectedCard;
 let secondSelectedCard;
 let previousCard;
 let score = 0;
- 
-const exitPopup = document.querySelectorAll(['data-exit-popup'])
-
 
 // Variables for sounds
-let bgBirdSound = new Audio ("assets/sounds/jungle1.wav");
-let flippingSound = new Audio ("assets/sounds/click4.mp3");
-let winningSound = new Audio ("assets/sounds/winning-sound.wav");
-let losingSound = new Audio ("assets/sounds/losing-sound.mp3");
-let congratsSound = new Audio ("assets/sounds/congrats.wav");
-
+const bgBirdSound = new Audio ("assets/sounds/jungle1.wav");
+const flippingSound = new Audio ("assets/sounds/click4.mp3");
+const winningSound = new Audio ("assets/sounds/winning-sound.wav");
+const losingSound = new Audio ("assets/sounds/losing-sound.mp3");
+const congratsSound = new Audio ("assets/sounds/congrats.wav");
 
 // Variables for timer countdown
 let countdown;
@@ -38,16 +34,12 @@ let exitButton = $(".exit-button");
 let losingPopup = $(".losing-popup");
 let tryAgainButton = $(".try-again-button");
 
-
-
 // Hide Intro Overlay 
 function closeIntroContent() {
     $(".intro-to-game").fadeOut();
     initialise();
     bgBirdSound.play();
 }
-
-
 
 // Mute/Unmute Background Sound
 $(".sound-button").click(function() {
@@ -61,9 +53,6 @@ $(".mute-sound-button").click(function() {
     $(".mute-sound-button").hide();
     $(".sound-button").show();
 });
-
-
-
 
 // Cards
 function initialise() {
@@ -124,8 +113,6 @@ function selectedCard(id,current) {
     }
 }
 
-
-
 // Shuffle Function
 function shuffle(arra1) {
     var ctr = arra1.length, temp, index;
@@ -143,7 +130,6 @@ function shuffle(arra1) {
     return arra1;
 }
 
-
 // Countdown 60seconds Function
 function countdownNow(seconds) {
    secondsLeft.text(secondsInput);
@@ -160,7 +146,6 @@ function countdownNow(seconds) {
        countdownNow(seconds);
    },1000);
 }
-
 
 // Winning / Losing Pop Up
 function showResult() {
@@ -189,7 +174,7 @@ tryAgainButton.click(function() {
     window.location.reload();
 }); 
 
-
+// Function to hide popup when exit button is clicked
 $('#closePopup').on('click', function () {
     $('.winning-popup').hide();
 })

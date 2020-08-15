@@ -4,92 +4,68 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"type="text/css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-		type="text/css" />
-   
-
-
 	<title>Jungle Memory Game</title>
 </head>
 
 <body>
+	<!-- HEADER SECTION CONTAINING MAIN PAGE HEADING -->
+	<header>
+		<h1 class="game-heading">Animal Kingdom</h1>
+	</header>
 
-
-<!-- HEADER SECTION CONTAINING MAIN PAGE HEADING -->
-<header>
-<h1 class="game-heading">Animal Kingdom</h1>
-</header>
-
-
-
-<!-- INTRO TO START THE GAME SECTION -->
-<section class="intro-to-game">
-<div class="intro-content">
+	<!-- INTRO TO START THE GAME SECTION -->
+	<section class="intro-to-game">
+		<div class="intro-content">
 			<h1 class="overlay-heading" onclick="closeIntroContent()">Click To Start</h1>
 		</div>
-	</div>
-</section>
-	
+		</div>
+	</section>
 
-
-<!-- DECK OF CARDS SECTION -->
+	<!-- DECK OF CARDS SECTION -->
 	<section id="cards" class="container">
-		
 		<div class="game-details">
 			<div class="score">Score: <span class="successful-match">0/8</span>
 			</div>
-            <div>
-            <button class="sound-button "><i class="fas fa-volume-up"></i></button>
-            <button class="mute-sound-button "><i class="fas fa-volume-mute"></i></button>
-            </div>
+			<div>
+				<button class="sound-button "><i class="fas fa-volume-up"></i></button>
+				<button class="mute-sound-button "><i class="fas fa-volume-mute"></i></button>
+			</div>
 			<div class="timer">Timer: <span class="seconds-left">60</span>
 			</div>
-            
-			<!--<div class="level">Level: <span class="level-played">1</span>
-			</div>-->
 		</div>
-        
 		<div class="game-container">
-    </div>
-
-
-	<!-- WINNING/LOSING POP UP -->
-	<section id="game-results">
-    
-		<div class="winning-container">
-        
-			<div class="winning-popup">
-            <div id="popup-overlay"></div>
-				<iframe class="clapping-iframe" src="https://gifer.com/embed/2k" allowFullScreen></iframe>
-				<h2 class="you-won-heading">Congradulations!</h2>
-				<p class="you-won-p">You have successfully matched all the cards</p>
-                <button class="play-again-button hvr-float-shadow">Play Again</button>
-            <button class="exit-button  hvr-float-shadow" id="closePopup">Exit</button>
-			</div>
 		</div>
-     
-        <div class="losing-container">
-       
-         <div class="losing-popup">
-
-               <iframe class="running-iframe" src="https://gifer.com/embed/F1" frameBorder="0" allowFullScreen></iframe>
-               <h2 class="you-lost-heading">Game Failed!</h2>
-               <p class="you-lost-p">Click "Try Again" to start a new game</p>
-               <button class="try-again-button hvr-float-shadow">Try Again</button>
-         </div>
-        </div>
-        
-    </section>
-   
 
 
-	</div>
+		<!-- WINNING/LOSING POP UP -->
+		<section id="game-results">
+			<div class="winning-container">
+				<div class="winning-popup">
+					<div id="popup-overlay"></div>
+					<iframe class="clapping-iframe" src="https://gifer.com/embed/2k" allowFullScreen></iframe>
+					<h2 class="you-won-heading">Congradulations!</h2>
+					<p class="you-won-p">You have successfully matched all the cards</p>
+					<button class="play-again-button hvr-float-shadow">Play Again</button>
+					<button class="exit-button  hvr-float-shadow" id="closePopup">Exit</button>
+				</div>
+			</div>
+			<div class="losing-container">
+				<div class="losing-popup">
+					<iframe class="running-iframe" src="https://gifer.com/embed/F1" frameBorder="0"
+						allowFullScreen></iframe>
+					<h2 class="you-lost-heading">Game Failed!</h2>
+					<p class="you-lost-p">Click "Try Again" to start a new game</p>
+					<button class="try-again-button hvr-float-shadow">Try Again</button>
+				</div>
+			</div>
+		</section>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.js"
-		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="assets/js/script.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 
 </html>
