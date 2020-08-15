@@ -188,7 +188,8 @@ playAgainButton.click(function() {
 tryAgainButton.click(function() {
     window.location.reload();
 }); 
-exitButton.click(function() {
-    fadeOut();
-});
 
+
+$('#closePopup').on('click', function () {
+    $('.winning-popup').hide();
+})
