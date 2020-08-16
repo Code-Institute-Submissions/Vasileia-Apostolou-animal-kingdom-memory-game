@@ -7,6 +7,23 @@ I am a Full Stack Web Developer student and this is my memory game created for m
 ## UX
 
 ## Testing 
+### Browsers
+The site was tested in the following browsers to ensure the site is compatible and responsive.
+  * Chrome
+  * Mozilla
+  * Safari
+  * Opera
+  * Internet Explorer 
+### Devices 
+The site was tested in the following devices to ensure the site is compatible and responsive.
+  * Iphone 8 Plus
+  * Huawei P30 Pro
+  * Huawei Mediapad T5
+  * MacBook Pro 
+
+  The site's HTML, CSS code has been tested in [W3C Validator](https://validator.w3.org/) and JavaScript code has been tested in [JS Hint](https://jshint.com/).
+    Responsiveness was tested in [Responsinator](https://www.responsinator.com/) , [Am I Responsive](http://ami.responsivedesign.is/) and [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly).
+
 
 ## Technologies Used 
 ### Languages
@@ -30,6 +47,8 @@ Git was used in this project for version control.
 2. [Gitpod](https://www.gitpod.io/)
 
 Gitpod was used to develop this project.
+
+
 ### Libraries 
 1. Sound icon was obtained from [Font Awesome](https://fontawesome.com/).
 2. Hover CSS Animations for buttons were taken from [Hover.css](http://ianlunn.github.io/Hover/).
@@ -55,10 +74,9 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 ### Content
 ### Code
 * Memory game tutorial from [Udemy](https://www.udemy.com/).
-* 3D flip card code was taken from [w3schools](https://www.w3schools.com/).
+* 3D flip ard code was taken from [w3schools](https://www.w3schools.com/).
+* JavaScript shuffle function was taken from [w3resource](https://www.w3resource.com/).
 * I got help on fixing errors and hints on how to solve problems from [Stack Overflow](https://stackoverflow.com/) and [Slack](https://slack.com/intl/en-dk/).
-
-
 
 
 ### Media
@@ -68,4 +86,6 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 * Winning/Losing result pop-up GIF was taken from [gifer.com](https://gifer.com/en/).
 * Sounds used on my page application were taken from [freesound.org](https://freesound.org/).
 ### Acknowledgements
+
+
 * I got my inspiration from [sabinemm's project](https://sabinemm.github.io/fruit-game/).
