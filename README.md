@@ -56,6 +56,8 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 ### Code
 * Memory game tutorial from [Udemy](https://www.udemy.com/).
 * 3D flip card code was taken from [w3schools](https://www.w3schools.com/).
+* I got help on fixing errors and hints on how to solve problems from [Stack Overflow](https://stackoverflow.com/) and [Slack](https://slack.com/intl/en-dk/).
+
 
 
 
@@ -66,3 +68,4 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 * Winning/Losing result pop-up GIF was taken from [gifer.com](https://gifer.com/en/).
 * Sounds used on my page application were taken from [freesound.org](https://freesound.org/).
 ### Acknowledgements
+* I got my inspiration from [sabinemm's project](https://sabinemm.github.io/fruit-game/).
