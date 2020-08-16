@@ -5,6 +5,8 @@ I am a Full Stack Web Developer student and this is my memory game created for m
 ## Demo 
 ### User Stories 
 ## UX
+### Features Left To Implement
+In the future, I would like to add levels to the game to increase complexity.
 
 ## Testing 
 ### Browsers
@@ -47,6 +49,10 @@ Git was used in this project for version control.
 2. [Gitpod](https://www.gitpod.io/)
 
 Gitpod was used to develop this project.
+
+3. [Balsamiq][https://balsamiq.com/]
+
+Balsamiq was used to create wireframes.
 
 
 ### Libraries 
