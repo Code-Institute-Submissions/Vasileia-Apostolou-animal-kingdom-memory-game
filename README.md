@@ -1,10 +1,31 @@
+## Table Of Content 
+- [**About**](#Animal-Kingdom-Memory-Game)
+- [**Demo**](##Demo)
+- [**UX**](##UX)
+    - [**User Stories**](###User-Stories)
+    - [**Features Left To Implement**](###Features-Left-To-Implement)
+- [**Testing**](##Testing)
+    - [**Browsers**](###Browsers)
+    - [**Devices**](##Devices)
+- [**Technologies Used**](##Technologies-Used)
+    - [**Languages**](###Languages)
+    - [**Tools**](###Tools)
+    - [**Libraries**](###Libraries)
+- [**Deployment**](##Deployment)
+- [**Credits**](##Credits)
+    - [**Content**](###Content)
+    - [**Code**](###Code)
+    - [**Media**](###Media)
+    - [**Acknowledgements**](###Acknowledgements)
+    
 # Animal Kingdom Memory Game 
 Milestone Project : Interactive Frontend Development - Code Institute 
 
 I am a Full Stack Web Developer student and this is my memory game created for my second Milestone Project. It's a single page application with a card matching game that requires concentration and a good memory in order to to win the game before the time finishes.
 ## Demo 
-### User Stories 
+
 ## UX
+### User Stories 
 ### Features Left To Implement
 In the future, I would like to add levels to the game to increase complexity.
 
@@ -50,7 +71,7 @@ Git was used in this project for version control.
 
 Gitpod was used to develop this project.
 
-3. [Balsamiq][https://balsamiq.com/]
+3. [Balsamiq](https://balsamiq.com/)
 
 Balsamiq was used to create wireframes.
 
