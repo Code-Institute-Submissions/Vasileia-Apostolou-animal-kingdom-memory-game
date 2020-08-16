@@ -10,8 +10,30 @@ I am a Full Stack Web Developer student and this is my memory game created for m
 
 ## Technologies Used 
 ### Languages
+1. [HTML](https://en.wikipedia.org/wiki/HTML)
+
+HTML was used in this project to keep up with the latest industry standards.
+
+2. [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+
+CSS was used for styling the content on the website.
+
+3. [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+JavaScript
+
 ### Tools 
+1. [Git](https://git-scm.com/)
+
+Git was used in this project for version control.
+
+2. [Gitpod](https://www.gitpod.io/)
+
+Gitpod was used to develop this project.
 ### Libraries 
+1. Sound icon was obtained from [Font Awesome](https://fontawesome.com/).
+2. Hover CSS Animations for buttons were taken from [Hover.css](http://ianlunn.github.io/Hover/).
+3. Fonts were taken from [Google Fonts](https://fonts.google.com/).
 
 ## Deployment 
 This project has been deployed to Github Pages from the master branch. A link to the deployed version of the site can be found [here](https://vasileia-apostolou.github.io/animal-kingdom-memory-game/).
@@ -32,7 +54,11 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 ## Credits 
 ### Content
 ### Code
-* Memory game tutorial 
+* Memory game tutorial from [Udemy](https://www.udemy.com/).
+* 3D flip card code was taken from [w3schools](https://www.w3schools.com/).
+
+
+
 ### Media
 * Background image was taken from [dreamybackdrop.com](https://www.dreamybackdrop.com).
 * Animal images were taken from [prestigiouspuzzles.com](https://www.prestigiouspuzzles.com/) and edited on [Photofox](http://www.photofoxapp.com/).
