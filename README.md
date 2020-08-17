@@ -16,6 +16,9 @@ Milestone Project : Interactive Frontend Development - Code Institute
     - [**User Stories**](#User-Stories)
     - [**Research**](#Research)
     - [**Wireframes**](#Wireframes)
+    - [**Design**](#Design)
+- [**Features**](#Features)
+    - [**Functionality**](#Functionality)
     - [**Features Left To Implement**](#Features-Left-To-Implement)
 - [**Testing**](##Testing)
     - [**Browsers**](#Browsers)
@@ -55,6 +58,14 @@ I researched memory games on Youtube and Udemy, to understand more how such a ga
 From the tutorials I have watched I could get a clear idea of what functionality and design I wanted my game to have.
 ### Wireframes
 To create this project's wireframes I used Balsamiq. 
+* [wireframes](https://github.com/Vasileia-Apostolou/animal-kingdom-memory-game/blob/master/assets/wireframes/game-wireframes.pdf)
+
+During development process same changes were made.
+### Design
+I wanted the design of my game to be green and colorful. For the background, I used an image that has a lot of trees and plants and I kept the animals in the cards. For the animal cards, I took a collage image with wild animals and cropped the ones I wanted to use for my project. I have then done some editing to the images to improve their quality. For my pop-up results, I used `background: linear-gradient` to give it a green color with a little bit of style, GIF of a monkey that's clapping in the winning pop-up and GIF of a baby elephant that's running in the losing pop-up, to bring some comedy to it.
+## Features
+### Functionality
+* 
 ### Features Left To Implement
 In the future, I would like to add levels to the game to increase complexity.
 
