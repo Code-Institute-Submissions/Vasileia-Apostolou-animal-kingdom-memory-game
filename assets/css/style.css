@@ -79,7 +79,7 @@
 }
 
 .score, .timer {
-    width: 40%;
+    width: 50%;
     float: left;
     margin-bottom: 2%;
     margin-right: 4%;
@@ -90,8 +90,10 @@
     text-shadow: 1px 1px 3px rgb(233, 226, 226); 
 }
 
-.timer {
-    margin-left: 10%;
+.game-details {
+    width: 97%;
+    display: flex;
+    
 }
 
 .you-won-heading, .you-lost-heading {

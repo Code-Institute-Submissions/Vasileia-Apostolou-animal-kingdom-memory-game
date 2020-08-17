@@ -25,6 +25,7 @@ Milestone Project : Interactive Frontend Development - Code Institute
     - [**Browsers**](#Browsers)
     - [**Devices**](#Devices)
     - [**Manual Testing**](#Manual-Testing)
+    - [**Errors**](#Errors)
 - [**Technologies Used**](#Technologies-Used)
     - [**Languages**](#Languages)
     - [**Tools**](#Tools)
@@ -122,6 +123,15 @@ The site was tested in the following devices to ensure the site is compatible an
 * Testing that the "Exit" button exits the overlay.
 * Testing that all content is visible and responsive on different screen sizes.
 
+### Errors 
+ #### Resolved 
+ 
+ #### Unresolved 
+ These errors are not yet fixed: 
+
+1. When the game is played on mobile device and the cards are clicked fast, the user can hear only the first sound. 
+2. It's harder to win the game on mobile devices due to necessarry scrolling. 
+
 
 ## Technologies Used 
 ### Languages
@@ -200,3 +210,5 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 
 
 * I got my inspiration from [sabinemm's project](https://sabinemm.github.io/fruit-game/).
+
+[Back to the top ↑](#Animal-Kingdom-Memory-Game)
