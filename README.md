@@ -15,6 +15,7 @@ Milestone Project : Interactive Frontend Development - Code Institute
 - [**UX**](#UX)
     - [**User Stories**](#User-Stories)
     - [**Research**](#Research)
+    - [**Wireframes**](#Wireframes)
     - [**Features Left To Implement**](#Features-Left-To-Implement)
 - [**Testing**](##Testing)
     - [**Browsers**](#Browsers)
@@ -52,6 +53,8 @@ I am a Full Stack Web Developer student and this is my memory game created for m
 ### Research 
 I researched memory games on Youtube and Udemy, to understand more how such a game is built.
 From the tutorials I have watched I could get a clear idea of what functionality and design I wanted my game to have.
+### Wireframes
+To create this project's wireframes I used Balsamiq. 
 ### Features Left To Implement
 In the future, I would like to add levels to the game to increase complexity.
 
