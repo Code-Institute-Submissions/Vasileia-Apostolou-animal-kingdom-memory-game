@@ -64,9 +64,9 @@ From the tutorials I have watched I could get a clear idea of what functionality
 To create this project's wireframes I used Balsamiq. 
 * [wireframes](https://github.com/Vasileia-Apostolou/animal-kingdom-memory-game/blob/master/assets/wireframes/game-wireframes.pdf)
 
-During development process same changes were made.
+During the development process some changes were made.
 ### Design
-I wanted the design of my game to be green and colorful. For the background, I used an image that has a lot of trees and plants and I kept the animals in the cards. For the animal cards, I took a collage image with wild animals and cropped the ones I wanted to use for my project. I have then done some editing to the images to improve their quality. For my pop-up results, I used `background: linear-gradient` to give it a green color with a little bit of style, GIF of a monkey that's clapping in the winning pop-up and GIF of a baby elephant that's running in the losing pop-up, to bring some comedy to it.
+I wanted the design of my game to be green and colorful. For the background, I used an image that has a lot of trees and plants and I kept the animals in the cards. For the animal cards, I took a collage image with wild animals and cropped the ones I wanted to use for my project. I have then done some editing to the images to improve their quality. For my pop-up results, I used `background: linear-gradient` to give it a green color with a little bit of style, GIF of a monkey that's clapping in the winning pop-up and GIF of a baby elephant that's running in the losing pop-up, to add some comedy to it.
 ## Features
 ### Functionality
 * The game starts with a "Click To Start" overlay.
