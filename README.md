@@ -1,5 +1,16 @@
+# Animal Kingdom Memory Game 
+Milestone Project : Interactive Frontend Development - Code Institute 
+
+<p align=center>
+<img src="https://images-na.ssl-images-amazon.com/images/I/61Q7R-Wc5XL._AC_.jpg">
+</p>
+
+<p align=center>
+<a href="https://vasileia-apostolou.github.io/animal-kingdom-memory-game/">Click To Play</a></p>
+
+
 ## Table Of Content 
-- [**About**](#Animal-Kingdom-Memory-Game)
+- [**About**](#About-My-Project)
 - [**Demo**](#Demo)
 - [**UX**](#UX)
     - [**User Stories**](#User-Stories)
@@ -18,9 +29,7 @@
     - [**Media**](#Media)
     - [**Acknowledgements**](#Acknowledgements)
     
-# Animal Kingdom Memory Game 
-Milestone Project : Interactive Frontend Development - Code Institute 
-
+## About My Project
 I am a Full Stack Web Developer student and this is my memory game created for my second Milestone Project. It's a single page application with a card matching game that requires concentration and a good memory in order to to win the game before the time finishes.
 ## Demo 
 
