@@ -65,7 +65,20 @@ During development process same changes were made.
 I wanted the design of my game to be green and colorful. For the background, I used an image that has a lot of trees and plants and I kept the animals in the cards. For the animal cards, I took a collage image with wild animals and cropped the ones I wanted to use for my project. I have then done some editing to the images to improve their quality. For my pop-up results, I used `background: linear-gradient` to give it a green color with a little bit of style, GIF of a monkey that's clapping in the winning pop-up and GIF of a baby elephant that's running in the losing pop-up, to bring some comedy to it.
 ## Features
 ### Functionality
-* 
+* The game starts with a "Click To Start" overlay.
+* Pointer changes to cursor when hovered over the cards, sound icon, overlays and buttons.
+* The cards have different images on the front and the same image on the back.
+* When a card is flipped the user hears a flipping sound. 
+* When the cards are matched the user hears a matching sound.
+* Matches made are counted in the score.
+* The timer gives the user 60 seconds to match all cards.
+* The user hears a winning sound when all cards are matched before time runs out.
+* "Congratulations!" overlay appears when the user has matched all the cards before time runs out. 
+* The game reloads when the user clicks on "Play Again".
+* The user hears a losing sound when cards are not matched before time runs out.
+* "Game Failed!" overlay appears when the user fails to matched all the cards before time runs out. 
+* The game reloads when the user clicks on "Try Again" and exits the overlay when the user clicks on "Exit".
+* All the cards can't be seen at the same time. When the user clicks on one card, it stays flipped, and when the user clicks on the second card, both cards stay flipped if they match and both cards flip back if they don't. 
 ### Features Left To Implement
 In the future, I would like to add levels to the game to increase complexity.
 
