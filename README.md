@@ -19,6 +19,7 @@ Milestone Project : Interactive Frontend Development - Code Institute
     - [**Design**](#Design)
 - [**Features**](#Features)
     - [**Functionality**](#Functionality)
+    - [**Existing Features**](#Existing-Features)
     - [**Features Left To Implement**](#Features-Left-To-Implement)
 - [**Testing**](##Testing)
     - [**Browsers**](#Browsers)
@@ -79,6 +80,14 @@ I wanted the design of my game to be green and colorful. For the background, I u
 * "Game Failed!" overlay appears when the user fails to matched all the cards before time runs out. 
 * The game reloads when the user clicks on "Try Again" and exits the overlay when the user clicks on "Exit".
 * All the cards can't be seen at the same time. When the user clicks on one card, it stays flipped, and when the user clicks on the second card, both cards stay flipped if they match and both cards flip back if they don't. 
+### Existing Features
+* Game Intro overlay
+* Cards
+* Score
+* On and Off sound button
+* Timer
+* Winning Overlay
+* Losing Overlay
 ### Features Left To Implement
 In the future, I would like to add levels to the game to increase complexity.
 
