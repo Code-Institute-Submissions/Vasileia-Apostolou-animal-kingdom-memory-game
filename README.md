@@ -24,10 +24,12 @@ Milestone Project : Interactive Frontend Development - Code Institute
 - [**Testing**](##Testing)
     - [**Browsers**](#Browsers)
     - [**Devices**](#Devices)
+    - [**Manual Testing**](#Manual-Testing)
 - [**Technologies Used**](#Technologies-Used)
     - [**Languages**](#Languages)
     - [**Tools**](#Tools)
     - [**Libraries**](#Libraries)
+    - [**Frameworks**](#Frameworks)
 - [**Deployment**](#Deployment)
 - [**Credits**](#Credits)
     - [**Content**](#Content)
@@ -89,7 +91,7 @@ I wanted the design of my game to be green and colorful. For the background, I u
 * Winning Overlay
 * Losing Overlay
 ### Features Left To Implement
-In the future I would like to add levels to the game to increase complexity. Also, I would like the game to connect the game to Facebook, so the user can invite friends to play and add a leaderboard with highscores.
+In the future I would like to add levels to the game to increase complexity. Also, I would like the game to connect the game to Facebook, so the user can invite friends to play and add a leaderboard which will require entering a name before starting the game and storing the scores in a database.
 
 ## Testing 
 ### Browsers
@@ -109,6 +111,17 @@ The site was tested in the following devices to ensure the site is compatible an
   The site's HTML, CSS code has been tested in [W3C Validator](https://validator.w3.org/) and JavaScript code has been tested in [JS Hint](https://jshint.com/).
     Responsiveness was tested in [Responsinator](https://www.responsinator.com/) , [Am I Responsive](http://ami.responsivedesign.is/) and [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly).
 
+### Manual Testing
+* Clicking on overlay where the "Click To Start" is to test if the overlay fades out and the game starts.
+* Clicking on all cards to test if they flip.
+* Clicking on all the cards fast to test if more than 2 cards can stay flipped at the same time.
+* Clicking on the background sound icon to check that will mute and unmute the sound.
+* Testing if "Congratulations!" overlay will pop up by matching all the cards.
+* Letting the timer to run out to check if "Game Failed!" overlay will pop up.
+* Testing that the "Play Again" / "Try Again" button reloads the game.
+* Testing that the "Exit" button exits the overlay.
+* Testing that all content is visible and responsive on different screen sizes.
+
 
 ## Technologies Used 
 ### Languages
@@ -122,7 +135,7 @@ CSS was used for styling the content on the website.
 
 3. [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-JavaScript
+JavaScript was used to create the main functional logic of this project.   
 ### Tools 
 1. [Git](https://git-scm.com/)
 
@@ -135,6 +148,14 @@ Gitpod was used to develop this project.
 3. [Balsamiq](https://balsamiq.com/)
 
 Balsamiq was used to create wireframes.
+
+4. [Dev Tools](https://developers.google.com/web/tools/chrome-devtools)
+
+Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. DevTools can help you edit pages on-the-fly and diagnose problems quickly, which ultimately helps you build better websites, faster. Google Chrome's Dev Tools was used in the building process of this project.
+
+5. [Balsamiq](https://balsamiq.com/)
+
+Balsamiq Wireframes is a rapid low-fidelity UI wireframing tool that reproduces the experience of sketching on a notepad or whiteboard, but using a computer. Balsamiq wireframes was used in producing the wireframes for this project.
 ### Libraries 
 1. Sound icon was obtained from [Font Awesome](https://fontawesome.com/).
 2. Hover CSS Animations for buttons were taken from [Hover.css](http://ianlunn.github.io/Hover/).
