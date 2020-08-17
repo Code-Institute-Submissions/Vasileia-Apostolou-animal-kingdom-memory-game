@@ -173,6 +173,19 @@ tryAgainButton.click(function() {
     window.location.reload();
 }); 
 
+/*window.onload = function() {
+    let reloading = sessionStorage.getItem("reloading");
+    if (reloading) {
+sessionStorage.removeItem("reloading");
+myFunction();
+ }
+}
+
+function reloadP () {
+    sessionStorage.setItem("reloading", "true");
+    document.location.reload();
+}*/
+
 // Function to hide popup when exit button is clicked
 $('#closePopup').on('click', function () {
     $('.winning-popup').hide();

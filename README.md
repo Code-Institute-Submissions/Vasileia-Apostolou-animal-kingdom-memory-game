@@ -14,6 +14,7 @@ Milestone Project : Interactive Frontend Development - Code Institute
 - [**Demo**](#Demo)
 - [**UX**](#UX)
     - [**User Stories**](#User-Stories)
+    - [**Research**](#Research)
     - [**Features Left To Implement**](#Features-Left-To-Implement)
 - [**Testing**](##Testing)
     - [**Browsers**](#Browsers)
@@ -48,6 +49,9 @@ I am a Full Stack Web Developer student and this is my memory game created for m
 * I want to be able to start a new game after I win or lose.
 * I want to be able to play the game on any device.
 
+### Research 
+I researched memory games on Youtube and Udemy, to understand more how such a game is built.
+From the tutorials I have watched I could get a clear idea of what functionality and design I wanted my game to have.
 ### Features Left To Implement
 In the future, I would like to add levels to the game to increase complexity.
 
