@@ -89,7 +89,7 @@ I wanted the design of my game to be green and colorful. For the background, I u
 * Winning Overlay
 * Losing Overlay
 ### Features Left To Implement
-In the future, I would like to add levels to the game to increase complexity.
+In the future I would like to add levels to the game to increase complexity. Also, I would like the game to connect the game to Facebook, so the user can invite friends to play and add a leaderboard with highscores.
 
 ## Testing 
 ### Browsers
@@ -123,7 +123,6 @@ CSS was used for styling the content on the website.
 3. [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 JavaScript
-
 ### Tools 
 1. [Git](https://git-scm.com/)
 
@@ -136,12 +135,14 @@ Gitpod was used to develop this project.
 3. [Balsamiq](https://balsamiq.com/)
 
 Balsamiq was used to create wireframes.
-
-
 ### Libraries 
 1. Sound icon was obtained from [Font Awesome](https://fontawesome.com/).
 2. Hover CSS Animations for buttons were taken from [Hover.css](http://ianlunn.github.io/Hover/).
 3. Fonts were taken from [Google Fonts](https://fonts.google.com/).
+### Frameworks 
+* [jQuery](https://jquery.com/)
+
+jQuery is a fast, small, and feature-rich JavaScript library. It was used in this project to simplify the DOM.
 
 ## Deployment 
 This project has been deployed to Github Pages from the master branch. A link to the deployed version of the site can be found [here](https://vasileia-apostolou.github.io/animal-kingdom-memory-game/).
