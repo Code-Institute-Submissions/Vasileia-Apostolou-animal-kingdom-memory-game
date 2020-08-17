@@ -2,7 +2,7 @@
 Milestone Project : Interactive Frontend Development - Code Institute 
 
 <p align=center>
-<img src="https://images-na.ssl-images-amazon.com/images/I/61Q7R-Wc5XL._AC_.jpg">
+<img src="https://www.prestigiouspuzzles.com/wp-content/uploads/2018/09/17656.jpg">
 </p>
 
 <p align=center>
@@ -34,7 +34,20 @@ I am a Full Stack Web Developer student and this is my memory game created for m
 ## Demo 
 
 ## UX
-### User Stories 
+### User Stories  
+* I want a game that improves my memory.
+* I want a game that is visually appealing, straightforward and non-distracting.
+* I want to be presented with a game start window and be able to start the game on-click.
+* I want to hear a background sound that suits the game's theme. 
+* I want to be able to mute/unmute the background sound.
+* I want to hear a card flipping sound.
+* I want to hear a sound when the cards are being matched.
+* I want to hear a sound when I win the game or lose the game.
+* I want a pop-up that tells me if I won the game.
+* I want a pop-up that tells me if I failed in finishing the game on time.
+* I want to be able to start a new game after I win or lose.
+* I want to be able to play the game on any device.
+
 ### Features Left To Implement
 In the future, I would like to add levels to the game to increase complexity.
 

@@ -68,7 +68,6 @@ countdownNow(seconds);
 }
 
 function selectedCard(id,current) {
-    console.log("card id" , id);
     let cardID = "#card" + id;
 
     if(!$(cardID).hasClass("onclick-cards")) {
@@ -99,7 +98,6 @@ function selectedCard(id,current) {
                 setTimeout(function(){
                 clickedCards=0;
                 },500);
-                console.log("Match");
                  winningSound.play();
             }else {
                 setTimeout(function() {
@@ -169,6 +167,7 @@ function showResult() {
 
 playAgainButton.click(function() {
     window.location.reload();
+    closeIntroContent()
 }); 
 tryAgainButton.click(function() {
     window.location.reload();
