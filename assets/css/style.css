@@ -289,14 +289,13 @@ background-image: url("../images/butterflies/butterfly18.jpg");
 
 .winning-popup, .losing-popup {
     top: 10%;
-    width: 70%;
-    height: 60%;
-    margin-left: 2%;
-   
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
    }
 
    .play-again-button, .exit-button{
-  margin-left: 10%;
+  margin-left: 6%;
 }
 
 
@@ -338,13 +337,16 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     .winning-popup, .losing-popup {
     top: 20%;
     width: 60%;
-    height: 57%;
+    height: 60%;
     right: 20%;
    } 
 
-   .play-again-button, .exit-button{
-  margin-left: 13%;
-}
+   /*.play-again-button, .exit-button{
+    margin-left: 15%;
+ margin-right: 10%;
+ margin-top: 5%;
+
+}*/
 
 .try-again-button {
  margin-left: 37%;
@@ -352,7 +354,7 @@ background-image: url("../images/butterflies/butterfly18.jpg");
 }
 
 .clapping-iframe {
-     margin-top: 5%;
+     margin-top: 7%;
   }
 
   .running-iframe { 
@@ -376,12 +378,19 @@ background-image: url("../images/butterflies/butterfly18.jpg");
   }
   }
 
- @media only screen and (min-width: 1024px) and (max-width: 1069px) {
-     .play-again-button, .exit-button{
-     margin-left: 50%;
+ @media only screen and (min-width: 1025px) and (max-width: 1069px) {
+     .play-again-button, .exit-button {
+     margin-left: 40%;
      }
  }
 
+
+@media only screen and (max-width: 479px) {
+    .play-again-button, .exit-button {
+      right: 20%;
+    
+    }
+}
  
 
   
