@@ -30,7 +30,7 @@
 .score, .timer {
     width: 50%;
     float: left;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     margin-right: 4%;
     box-sizing: border-box;
     font-size: 30px;
@@ -39,12 +39,9 @@
     text-shadow: 1px 1px 3px rgb(233, 226, 226); 
 }
 
-
-
-
-
 /* BUTTONS */
 .sound-button, .mute-sound-button {
+    margin-top: 55%;
     font-size: 2em;
     text-shadow: 2px 3px 3px #fff;
    background: transparent;
@@ -78,10 +75,6 @@
  margin-top: 3%;
 }
 
-
-
-
-
 /* HEADINGS */
 .game-heading {
     text-align: center;
@@ -110,17 +103,12 @@
    padding-top: 15%;
    font-size: 80px;
    color: aliceblue;
-   text-shadow: 2px 2px 3px green;
-   
+   text-shadow: 2px 2px 3px green; 
 }
 
 #overlay-heading:hover {
     color: aquamarine;
 }
-
-
-
-
 
 /* CARDS */
 .flip-card {
@@ -131,10 +119,9 @@
   box-sizing: border-box;
   perspective: 1000px;
   position: relative;
-  
+ 
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 127px;
@@ -143,7 +130,6 @@
   transition: transform 0.5s;
 transform-style: preserve-3d;
 border: 2px solid #000;
-
 }
 
 .onclick-cards {
@@ -153,8 +139,6 @@ border: 2px solid #000;
     -webkit-transform: rotateY(180deg);
 }
 
-
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 125px;
@@ -162,10 +146,8 @@ border: 2px solid #000;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden; 
   backface-visibility: hidden;
-
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
 background-image: url("../images/butterflies/butterfly18.jpg");
   transform: rotateY(0deg);
@@ -175,15 +157,12 @@ background-image: url("../images/butterflies/butterfly18.jpg");
   cursor: pointer;
 }
 
-/* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
   transition: 0.5s linear 0s;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
 
 /* RESULT POP-UPS */
    .winning-popup {
@@ -198,10 +177,8 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     border-radius: 10px;
   display: none;
   background-color: rgba(1, 19, 19, 0.8); 
-   
    }
   
-
   .clapping-iframe {
       width: 70%;
       height: 50%;
@@ -209,7 +186,6 @@ background-image: url("../images/butterflies/butterfly18.jpg");
       margin-left: 13%;
       border-radius: 2%;
   }
-
 
  .losing-popup {
     background: linear-gradient(rgba(40, 187, 35, 0.473), rgba(214, 243, 222, 0.6), rgba(40, 187, 35, 0.6));
@@ -223,7 +199,6 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     border-radius: 10px;
     display: none;
     background-color: rgba(1, 19, 19, 0.8); 
-     
    }
 
    .running-iframe { 
@@ -233,8 +208,6 @@ background-image: url("../images/butterflies/butterfly18.jpg");
       margin-left: 13%;
       border-radius: 2%;
    }
-
-
 
 /* OVERLAYS */
 .intro-to-game{
@@ -264,13 +237,6 @@ background-image: url("../images/butterflies/butterfly18.jpg");
  
 }*/
 
-
-
-
-
-
-
-
 /* -------- MEDIA QUERIES -------- */
 @media only screen and (min-width: 507px) and (max-width: 674px) {
      .flip-card {
@@ -297,8 +263,10 @@ background-image: url("../images/butterflies/butterfly18.jpg");
    .play-again-button, .exit-button{
   margin-left: 6%;
 }
-
-
+.exit-button {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 .try-again-button {
  margin-left: 33%;
 }
@@ -318,16 +286,16 @@ background-image: url("../images/butterflies/butterfly18.jpg");
    body {
         min-height: 100vh;
       } 
+
     .game-heading {
         font-size: 40px;
     }
+
     .flip-card {
   width: 135px;
   height: 135px;
 }
 }
-
-  
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
       body {
@@ -340,13 +308,6 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     height: 60%;
     right: 20%;
    } 
-
-   /*.play-again-button, .exit-button{
-    margin-left: 15%;
- margin-right: 10%;
- margin-top: 5%;
-
-}*/
 
 .try-again-button {
  margin-left: 37%;
@@ -364,7 +325,6 @@ background-image: url("../images/butterflies/butterfly18.jpg");
       margin-left: 10%;
    }
   
-
   @media only screen and (max-width: 280px) {
        .play-again-button, .exit-button{
   margin-left: 4%;
@@ -384,11 +344,9 @@ background-image: url("../images/butterflies/butterfly18.jpg");
      }
  }
 
-
 @media only screen and (max-width: 479px) {
     .play-again-button, .exit-button {
       right: 20%;
-    
     }
 }
  

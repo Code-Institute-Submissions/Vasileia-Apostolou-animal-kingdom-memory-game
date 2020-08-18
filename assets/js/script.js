@@ -2,7 +2,7 @@
 let animalCards = ['1', '2', '3', '4', '5', '6', '7', '8', '1', '2', '3', '4', '5', '6', '7', '8'];
 
 // Variables for cards
-let flipNumber = 0;
+/*let flipNumber = 0;*/
 let clickedCards = 0;
 let firstSelectedCard;
 let secondSelectedCard;
@@ -23,7 +23,7 @@ let seconds = secondsInput;
 let secondsLeft = $(".seconds-left");
 
 // Variable for score
-let scoreNumber = $(".successful-match");
+/*let scoreNumber = $(".successful-match");*/
 
 // Variables for results
 let youLost = false;
@@ -153,7 +153,6 @@ function showResult() {
 
 playAgainButton.click(function () {
     window.location.reload();
-    closeIntroContent()
 });
 
 tryAgainButton.click(function () {
@@ -163,4 +162,4 @@ tryAgainButton.click(function () {
 // Function to hide popup when exit button is clicked
 $('#closePopup').on('click', function () {
     $('.winning-popup').hide();
-})
+});
