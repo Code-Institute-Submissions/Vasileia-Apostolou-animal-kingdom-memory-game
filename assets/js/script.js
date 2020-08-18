@@ -27,7 +27,7 @@ let secondsLeft = $(".seconds-left");
 
 // Variables for results
 let youLost = false;
-let gameResults = $(".game-results");
+let gameResults = $("#game-results");
 let winningPopup = $(".winning-popup");
 let playAgainButton = $(".play-again-button");
 let exitButton = $(".exit-button");

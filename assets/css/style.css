@@ -13,13 +13,15 @@
 }
 
 .container {
-    width: 800px;
+    width: 550px;
     margin: auto;
 }
 
 .game-container {
-    margin-left: 10%;
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .game-details {
@@ -28,7 +30,7 @@
 }
 
 .score, .timer {
-    width: 50%;
+    width: 60%;
     float: left;
     margin-bottom: 5%;
     margin-right: 4%;
@@ -79,6 +81,7 @@
 .game-heading {
     text-align: center;
     margin-right: 3%;
+    margin-bottom: 0;
     font-size: 45px;
     font-family: 'Cinzel Decorative', cursive;
     text-shadow: 1px 1px 2px #fff;
@@ -113,9 +116,10 @@
 /* CARDS */
 .flip-card {
   float: left;
-  width: 150px;
-  height: 150px;
-  padding: 5px;
+  width: 120px;
+  height: 120px;
+  /*padding: 5px;*/
+  margin: 8px auto;
   box-sizing: border-box;
   perspective: 1000px;
   position: relative;
@@ -124,8 +128,8 @@
 
 .flip-card-inner {
   position: relative;
-  width: 127px;
-  height: 127px;
+  width: 100%;
+  height: 100%;
   text-align: center;
   transition: transform 0.5s;
 transform-style: preserve-3d;
@@ -141,8 +145,8 @@ border: 2px solid #000;
 
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 125px;
-  height: 125px;
+  width: 119px;
+  height: 119px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden; 
   backface-visibility: hidden;
@@ -152,8 +156,8 @@ border: 2px solid #000;
 background-image: url("../images/butterflies/butterfly18.jpg");
   transform: rotateY(0deg);
   transition: 0.5s linear 0s;
-  width: 127px;
-  height: 127px;
+  /*width: 127px;
+  height: 127px;*/
   cursor: pointer;
 }
 
@@ -219,34 +223,30 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     background-color: rgba(1, 19, 19, 0.8); 
 }
 
-/*.winning-container, .losing-container {
-    top: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0, 128, 0, 0.425); 
-    z-index: 100;
-}
-
-.popup-overlay {
+#game-results {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 100;
     background-color: rgba(1, 19, 19, 0.8); 
- 
-}*/
+}
+
+
+
+
+
 
 /* -------- MEDIA QUERIES -------- */
-@media only screen and (min-width: 507px) and (max-width: 674px) {
+/*@media only screen and (min-width: 507px) and (max-width: 674px) {
      .flip-card {
   width: 120px;
   height: 120px;
   margin: 1%;
   padding-left: 15%;
-}
-
- }
+}*/
 
 @media only screen and (max-width: 767px) {
   .container {
@@ -288,13 +288,22 @@ background-image: url("../images/butterflies/butterfly18.jpg");
       } 
 
     .game-heading {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .flip-card {
-  width: 135px;
-  height: 135px;
+  width: 75px;
+  height: 75px;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin: 5px auto;
 }
+
+    .flip-card-back,
+    .flip-card-front {
+        width: 73px;
+        height: 73px;
+    }
 }
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -351,11 +360,6 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     }
 }
 
-@media only screen and (min-width: 1280px) {
-    .winning-popup, .losing-popup {
-        margin-left: 20%;
-    }
-}
  
 
   
