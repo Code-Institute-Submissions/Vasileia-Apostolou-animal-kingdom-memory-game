@@ -18,12 +18,9 @@ const congratsSound = new Audio("assets/sounds/congrats.wav");
 
 // Variables for timer countdown
 let countdown;
-let secondsInput = 60;
+let secondsInput = 100;
 let seconds = secondsInput;
 let secondsLeft = $(".seconds-left");
-
-// Variable for score
-/*let scoreNumber = $(".successful-match");*/
 
 // Variables for results
 let youLost = false;
@@ -81,19 +78,16 @@ function selectedCard(id, current) {
                 $(".successful-match").text(score + "/8");
                 if (score == 8) {
                     clearTimeout(countdownNow);
-
                     setTimeout(function () {
                         showResult();
                     }, 1000);
                     return;
                 }
-
                 setTimeout(function () {
                     clickedCards = 0;
                 }, 500);
                 winningSound.play();
             } else {
-
                 setTimeout(function () {
                     $(cardID).removeClass("onclick-cards");
                     $(previousCard).removeClass("onclick-cards");

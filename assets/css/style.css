@@ -10,24 +10,24 @@
     min-height: 90vh;
     padding: 0px;
     margin: 0px;
-}
+ }
 
 .container {
-    width: 550px;
+    width: 600px;
     margin: auto;
-}
+ }
 
 .game-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+ }
 
 .game-details {
     width: 97%;
     display: flex; 
-}
+ }
 
 .score, .timer {
     width: 60%;
@@ -39,45 +39,9 @@
     text-align: center;
     font-family: 'Lobster', cursive;
     text-shadow: 1px 1px 3px rgb(233, 226, 226); 
-}
-
-/* BUTTONS */
-.sound-button, .mute-sound-button {
-    margin-top: 55%;
-    font-size: 2em;
-    text-shadow: 2px 3px 3px #fff;
-   background: transparent;
-   cursor: pointer;
-   border: none;
-}
-
-.mute-sound-button {
-  display: none;
-}
-
-.play-again-button, .exit-button {
- cursor: pointer;
- font-family: 'Lobster', 'Courier New', Courier, monospace;
- font-size: 1.4em;
- margin-left: 15%;
- margin-right: 10%;
- margin-top: 5%;
-}
-
-.exit-button {
-    padding-left: 7%;
-    padding-right: 7%;
-}
-
-.try-again-button {
- cursor: pointer;
- font-family: 'Lobster', 'Courier New', Courier, monospace;
- font-size: 1.4em;
- margin-left: 40%;
- margin-top: 3%;
-}
-
-/* HEADINGS */
+ }
+ 
+ /* ------ HEADINGS ------ */
 .game-heading {
     text-align: center;
     margin-right: 3%;
@@ -85,90 +49,124 @@
     font-size: 45px;
     font-family: 'Cinzel Decorative', cursive;
     text-shadow: 1px 1px 2px #fff;
-}
+ }
 
 .you-won-heading, .you-lost-heading {
-   margin-bottom: 0;
+    margin-bottom: 0;
     text-align: center;
     font-family: 'Cinzel Decorative', 'Courier New', Courier, monospace;
-}
+ }
 
 .you-won-p, .you-lost-p {
     text-align: center;
     font-family: 'Josefin Sans', 'Courier New', Courier, monospace;
     font-size: 1.3em;    
-}
+ }
  
  .overlay-heading {
     cursor: pointer;
     text-align: center;
     font-family: 'Lobster', 'Courier New', Courier, monospace;
-   padding-top: 15%;
-   font-size: 80px;
-   color: aliceblue;
-   text-shadow: 2px 2px 3px green; 
-}
+    padding-top: 15%;
+    font-size: 80px;
+    color: aliceblue;
+    text-shadow: 2px 2px 3px green; 
+ }
 
 #overlay-heading:hover {
     color: aquamarine;
-}
+ }
 
-/* CARDS */
+/* ------- BUTTONS ------- */
+.sound-button, .mute-sound-button {
+    margin-top: 55%;
+    font-size: 2em;
+    text-shadow: 2px 3px 3px #fff;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+ }
+
+.mute-sound-button {
+    display: none;
+ }
+
+.play-again-button, .exit-button {
+    cursor: pointer;
+    font-family: 'Lobster', 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 5%;
+ }
+
+.exit-button {
+    padding-left: 7%;
+    padding-right: 7%;
+ }
+
+.try-again-button {
+   cursor: pointer;
+   font-family: 'Lobster', 'Courier New', Courier, monospace;
+   font-size: 1.4em;
+   margin-left: 40%;
+   margin-top: 3%;
+ }
+
+/* ------ CARDS ------ */
 .flip-card {
-  float: left;
-  width: 120px;
-  height: 120px;
-  /*padding: 5px;*/
-  margin: 8px auto;
-  box-sizing: border-box;
-  perspective: 1000px;
-  position: relative;
- 
-}
+   float: left;
+   width: 150px;
+   height: 150px;
+   margin: 5px auto;
+   box-sizing: border-box;
+   perspective: 1000px;
+   position: relative;
+ }
 
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.5s;
-transform-style: preserve-3d;
-border: 2px solid #000;
-}
+   position: relative;
+   width: 127px;
+   height: 127px;
+   text-align: center;
+   transition: transform 0.5s;
+   transform-style: preserve-3d;
+   border: 2px solid #000;
+ }
 
 .onclick-cards {
     transform: rotateY(180deg);
     border: 2px solid #000;
     box-sizing: border-box;
     -webkit-transform: rotateY(180deg);
-}
+ }
 
 .flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 119px;
-  height: 119px;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden; 
-  backface-visibility: hidden;
-}
+   position: absolute;
+   width: 125px;
+   height: 125px;
+   -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden; 
+   backface-visibility: hidden;
+ }
 
 .flip-card-front {
-background-image: url("../images/butterflies/butterfly18.jpg");
-  transform: rotateY(0deg);
-  transition: 0.5s linear 0s;
-  /*width: 127px;
-  height: 127px;*/
-  cursor: pointer;
-}
+   background-image: url("../images/butterflies/butterfly18.jpg");
+   transform: rotateY(0deg);
+   transition: 0.5s linear 0s;
+   width: 127px;
+   height: 127px;
+   cursor: pointer;
+ }
 
 .flip-card-back {
-  transform: rotateY(180deg);
-  transition: 0.5s linear 0s;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+   transform: rotateY(180deg);
+   transition: 0.5s linear 0s;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
 
-/* RESULT POP-UPS */
+/* ------ RESULT POP-UPS ------ */
    .winning-popup {
     background: linear-gradient(rgba(4, 99, 1, 0.623), rgba(171, 247, 205, 0.685), rgba(4, 99, 1, 0.623));
     top: 20%;
@@ -179,19 +177,19 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     z-index: 5;
     border: 2px solid #000;
     border-radius: 10px;
-  display: none;
-  background-color: rgba(1, 19, 19, 0.8); 
-   }
+   display: none;
+   background-color: rgba(1, 19, 19, 0.8); 
+ }
   
-  .clapping-iframe {
-      width: 70%;
-      height: 50%;
-      margin-top: 2%;
-      margin-left: 13%;
-      border-radius: 2%;
-  }
+.clapping-iframe {
+    width: 70%;
+    height: 50%;
+    margin-top: 2%;
+    margin-left: 13%;
+    border-radius: 2%;
+ }
 
- .losing-popup {
+.losing-popup {
     background: linear-gradient(rgba(40, 187, 35, 0.473), rgba(214, 243, 222, 0.6), rgba(40, 187, 35, 0.6));
     top: 20%;
     width: 40%;
@@ -203,17 +201,17 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     border-radius: 10px;
     display: none;
     background-color: rgba(1, 19, 19, 0.8); 
-   }
+ }
 
-   .running-iframe { 
-       width: 72%;
-      height: 50%;
-      margin-top: 2%;
-      margin-left: 13%;
-      border-radius: 2%;
-   }
+.running-iframe { 
+    width: 72%;
+    height: 50%;
+    margin-top: 2%;
+    margin-left: 13%;
+    border-radius: 2%;
+ }
 
-/* OVERLAYS */
+/* ------- OVERLAYS ------- */
 .intro-to-game{
     top: 0;
     width: 100%;
@@ -221,7 +219,7 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     position: fixed;
     z-index: 5;
     background-color: rgba(1, 19, 19, 0.8); 
-}
+ }
 
 #game-results {
     display: none;
@@ -232,132 +230,129 @@ background-image: url("../images/butterflies/butterfly18.jpg");
     height: 100%;
     z-index: 100;
     background-color: rgba(1, 19, 19, 0.8); 
-}
-
-
-
-
-
+ }
 
 /* -------- MEDIA QUERIES -------- */
-/*@media only screen and (min-width: 507px) and (max-width: 674px) {
-     .flip-card {
-  width: 120px;
-  height: 120px;
-  margin: 1%;
-  padding-left: 15%;
-}*/
-
 @media only screen and (max-width: 767px) {
-  .container {
-      width: 100%;
-  }
+.container {
+    width: 100%;
+ }
 
 .winning-popup, .losing-popup {
     top: 10%;
     width: 90%;
     height: 80%;
     margin-left: 5%;
-   }
+ }
 
-   .play-again-button, .exit-button{
-  margin-left: 6%;
-}
+.play-again-button, .exit-button{
+    margin-left: 6%;
+ }
+
 .exit-button {
     padding-left: 10%;
     padding-right: 10%;
-}
+ }
+
 .try-again-button {
- margin-left: 33%;
-}
+    margin-left: 33%;
+ }
 
 .clapping-iframe {
-      width: 80%;
-      margin-left: 9%;
-      margin-top: 7%;
-  }
+    width: 80%;
+    margin-left: 9%;
+    margin-top: 7%;
+ }
 
-  .running-iframe { 
-      width: 90%;
-      margin-top: 5%;
-      margin-left: 5%;
-   }
+.running-iframe { 
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+ }
 
-   body {
-        min-height: 100vh;
-      } 
+body {
+    min-height: 100vh;
+ } 
 
-    .game-heading {
-        font-size: 30px;
-    }
+.game-heading {
+    font-size: 32px;
+ }
 
-    .flip-card {
-  width: 75px;
-  height: 75px;
-  margin-top: 10px;
-  margin-right: 5px;
-  margin: 5px auto;
+.flip-card {
+    width: 75px;
+    height: 75px;
+ }     
+
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+ }
+
+.flip-card-front {
+    width: 75px;
+    height: 75px;
+ }
+
+.flip-card-inner {
+    width: 75px;
+    height: 75px;
+ }
+
+.score, .timer, .sound-button, .mute-sound-button {
+    font-size: 20px;
+ }
 }
 
-    .flip-card-back,
-    .flip-card-front {
-        width: 73px;
-        height: 73px;
-    }
-}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+    min-height: 100vh;
+ } 
 
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-      body {
-        min-height: 100vh;
-      } 
-
-    .winning-popup, .losing-popup {
+.winning-popup, .losing-popup {
     top: 20%;
     width: 60%;
     height: 60%;
     right: 20%;
-   } 
+ } 
 
 .try-again-button {
- margin-left: 37%;
- 
-}
-
-.clapping-iframe {
-     margin-top: 7%;
-  }
-
-  .running-iframe { 
-      width: 80%;
-      height: 50%;
-      margin-top: 5%;
-      margin-left: 10%;
-   }
-  
-  @media only screen and (max-width: 280px) {
-       .play-again-button, .exit-button{
-  margin-left: 4%;
-}
-
-.clapping-iframe {
-      width: 80%;
-      height: 40%;
-      margin-left: 9%;
-      margin-top: 7%;
-  }
-  }
-
- @media only screen and (min-width: 1025px) and (max-width: 1069px) {
-     .play-again-button, .exit-button {
-     margin-left: 40%;
-     }
-     
+    margin-left: 37%;
  }
 
+.clapping-iframe {
+    margin-top: 7%;
+ }
+
+.running-iframe { 
+    width: 80%;
+    height: 50%;
+    margin-top: 5%;
+    margin-left: 10%;
+ }
+  
+@media only screen and (max-width: 280px) {
+.play-again-button, .exit-button{
+    margin-left: 4%;
+ }
+
+.clapping-iframe {
+    width: 80%;
+    height: 40%;
+    margin-left: 9%;
+    margin-top: 7%;
+ }
+}
+
+ @media only screen and (min-width: 1025px) and (max-width: 1069px) {
+.play-again-button, .exit-button {
+    margin-left: 40%;
+ }
+}
+
 @media only screen and (max-width: 479px) {
-    .play-again-button, .exit-button {
-      right: 20%;
-    }
+.play-again-button, .exit-button {
+    right: 20%;
+ }
 }
 
  
