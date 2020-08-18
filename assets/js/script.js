@@ -18,7 +18,7 @@ const congratsSound = new Audio("assets/sounds/congrats.wav");
 
 // Variables for timer countdown
 let countdown;
-let secondsInput = 100;
+let secondsInput = 50;
 let seconds = secondsInput;
 let secondsLeft = $(".seconds-left");
 
@@ -54,8 +54,10 @@ $(".mute-sound-button").click(function () {
 // Cards
 function initialise() {
     animalCards = shuffle(animalCards);
+
     for (let i = 0; i < 16; i++) {
         let card = "<div class='flip-card'><div class='flip-card-inner' id='card" + i + "' onclick='selectedCard(" + i + ", " + animalCards[i] + ")'><div class='flip-card-front'></div><div class='flip-card-back' style='background-image:url(assets/images/animals/animal" + animalCards[i] + ".jpg')></div></div></div>";
+
         $(".game-container").append(card);
     }
     countdownNow(seconds);
@@ -63,19 +65,24 @@ function initialise() {
 
 function selectedCard(id, current) {
     let cardID = "#card" + id;
+
     if (!$(cardID).hasClass("onclick-cards")) {
         $(cardID).addClass("onclick-cards");
         flippingSound.play();
         clickedCards++;
+
         if (clickedCards == 1) {
             firstSelectedCard = current;
             previousCard = cardID;
         }
+
         if (clickedCards == 2) {
             secondSelectedCard = current;
+
             if (firstSelectedCard == secondSelectedCard) {
                 score++;
                 $(".successful-match").text(score + "/8");
+                
                 if (score == 8) {
                     clearTimeout(countdownNow);
                     setTimeout(function () {
@@ -114,6 +121,7 @@ function shuffle(arra1) {
 // Countdown 60seconds Function
 function countdownNow(seconds) {
     secondsLeft.text(secondsInput);
+
     if (secondsInput == 0) {
         clearTimeout(countdown);
         setTimeout(function () {
@@ -121,7 +129,6 @@ function countdownNow(seconds) {
         }, 1000);
         return;
     }
-
     secondsInput--;
     countdown = setTimeout(function () {
         countdownNow(seconds);
@@ -132,6 +139,7 @@ function countdownNow(seconds) {
 function showResult() {
     youLost = true;
     gameResults.show();
+
     if (score == 8) {
         winningPopup.show();
         playAgainButton.show();
@@ -155,5 +163,6 @@ tryAgainButton.click(function () {
 
 // Function to hide popup when exit button is clicked
 $('#closePopup').on('click', function () {
-    $('.winning-popup').hide();
+    winningPopup.hide();
+    gameResults.hide();
 });
