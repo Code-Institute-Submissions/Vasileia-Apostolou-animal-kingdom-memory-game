@@ -342,11 +342,18 @@ background-image: url("../images/butterflies/butterfly18.jpg");
      .play-again-button, .exit-button {
      margin-left: 40%;
      }
+     
  }
 
 @media only screen and (max-width: 479px) {
     .play-again-button, .exit-button {
       right: 20%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .winning-popup, .losing-popup {
+        margin-left: 20%;
     }
 }
  
