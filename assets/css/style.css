@@ -40,7 +40,7 @@
     font-family: 'Lobster', cursive;
     text-shadow: 1px 1px 3px rgb(233, 226, 226); 
  }
- 
+
  /* ------ HEADINGS ------ */
 .game-heading {
     text-align: center;
@@ -294,8 +294,8 @@ body {
  }
 
 .flip-card-inner {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
  }
 
 .score, .timer, .sound-button, .mute-sound-button {
