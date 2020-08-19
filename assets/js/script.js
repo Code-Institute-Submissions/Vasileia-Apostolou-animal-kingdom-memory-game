@@ -2,7 +2,6 @@
 let animalCards = ['1', '2', '3', '4', '5', '6', '7', '8', '1', '2', '3', '4', '5', '6', '7', '8'];
 
 // Variables for cards
-/*let flipNumber = 0;*/
 let clickedCards = 0;
 let firstSelectedCard;
 let secondSelectedCard;
@@ -84,7 +83,7 @@ function selectedCard(id, current) {
                 $(".successful-match").text(score + "/8");
                 
                 if (score == 8) {
-                    clearTimeout(countdownNow);
+                    clearTimeout(countdown);
                     setTimeout(function () {
                         showResult();
                     }, 1000);
@@ -123,7 +122,7 @@ function countdownNow(seconds) {
     secondsLeft.text(secondsInput);
 
     if (secondsInput == 0) {
-        clearTimeout(countdown);
+        clearTimeout(countdownNow);
         setTimeout(function () {
             showResult();
         }, 1000);

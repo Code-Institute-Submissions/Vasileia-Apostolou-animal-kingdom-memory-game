@@ -2,7 +2,7 @@
 
 
 body {
-    background: url("../images/option3.jpg");
+    background: url("../images/game-bg-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,7 +149,7 @@ body {
  }
 
 .flip-card-front {
-   background-image: url("../images/butterflies/butterfly18.jpg");
+   background-image: url("../images/butterfly.jpg");
    transform: rotateY(0deg);
    transition: 0.5s linear 0s;
    width: 127px;
@@ -233,7 +233,7 @@ body {
 /* -------- MEDIA QUERIES -------- */
 @media only screen and (max-width: 767px) {
 .container {
-    width: 100%;
+    width: 90%;
  }
 
 .winning-popup, .losing-popup {
@@ -273,7 +273,7 @@ body {
  } 
 
 .game-heading {
-    font-size: 32px;
+    font-size: 35px;
  }
 
 .flip-card {
