@@ -39,7 +39,7 @@ Milestone Project : Interactive Frontend Development - Code Institute
     - [**Acknowledgements**](#Acknowledgements)
     
 ## About My Project
-I am a Full Stack Web Developer student and this is my memory game created for my second Milestone Project. It's a single page application with a card matching game that requires concentration and a good memory in order to to win the game before the time finishes.
+I am a Full Stack Web Developer student and this is my memory game created for my second Milestone Project. It's a single page application with a card matching game that requires concentration and a good memory in order to win the game before the time finishes.
 ## Demo 
 ![My game's demo](assets/images/demo-screenshot.png)
 ## UX
@@ -51,7 +51,7 @@ I am a Full Stack Web Developer student and this is my memory game created for m
 * I want to be able to mute/unmute the background sound.
 * I want to hear a card flipping sound.
 * I want to hear a sound when the cards are being matched.
-* I want to hear a sound when I win the game or lose the game.
+* I want to hear a sound when I win or lose the game.
 * I want a pop-up that tells me if I won the game.
 * I want a pop-up that tells me if I failed in finishing the game on time.
 * I want to be able to start a new game after I win or lose.
@@ -66,12 +66,12 @@ To create this project's wireframes I used Balsamiq.
 
 During the development process some changes were made.
 ### Design
-I wanted the design of my game to be green and colorful. For the background, I used an image that has a lot of trees and plants and I kept the animals in the cards. For the animal cards, I took a collage image with wild animals and cropped the ones I wanted to use for my project. I have then done some editing to the images to improve their quality. For my pop-up results, I used `background: linear-gradient` to give it a green color with a little bit of style, GIF of a monkey that's clapping in the winning pop-up and GIF of a baby elephant that's running in the losing pop-up, to add some comedy to it.
+I wanted a Jungle themed game that's green and colorful. For the background, I wanted a lot of trees and plants and to keep the animals in the cards. For the animal cards, I took a collage image with wild animals and cropped the ones I wanted to use for my project. I have then done some editing to the images to improve their quality. For my pop-up results, I used `background: linear-gradient` to give it a green color with a little bit of style, GIF of a monkey that's clapping in the winning pop-up and GIF of a baby elephant that's running in the losing pop-up, to add some comedy to it.
 ## Features
 ### Functionality
 * The game starts with a "Click To Start" overlay.
-* Pointer changes to cursor when hovered over the cards, sound icon, overlays and buttons.
-* The cards have different images on the front and the same image on the back.
+* Cursor changes to pointer when hovered over the cards, sound icon, overlays and buttons.
+* The cards have different images on the back and the same image on the front.
 * When a card is flipped the user hears a flipping sound. 
 * When the cards are matched the user hears a matching sound.
 * Matches made are counted in the score.
@@ -92,7 +92,7 @@ I wanted the design of my game to be green and colorful. For the background, I u
 * Winning Overlay
 * Losing Overlay
 ### Features Left To Implement
-In the future I would like to add levels to the game to increase complexity. Also, I would like the game to connect the game to Facebook, so the user can invite friends to play and add a leaderboard which will require entering a name before starting the game and storing the scores in a database.
+In the future I would like to add levels to the game to increase complexity. Also, I would like the game to connect to Facebook, so the user can invite friends to play and add a leaderboard which will require entering a name before starting the game and storing the scores in a database.
 
 ## Testing 
 ### Browsers
@@ -124,13 +124,11 @@ The site was tested in the following devices to ensure the site is compatible an
 * Testing that all content is visible and responsive on different screen sizes.
 
 ### Errors 
- #### Resolved 
- 
  #### Unresolved 
  These errors are not yet fixed: 
 
-1. When the game is played on mobile device and the cards are clicked fast, the user can hear only the first sound. 
-2. It's harder to win the game on mobile devices due to necessarry scrolling. 
+1. During the manual testing I realised that when the cards are being clicked too fast, some of them stay flipped even if they don't match. When that happens the user is unable to win the game. Due to time constraints I was not able to fix this error.
+2. During the manual testing I realised that the flipping and losing sound is not being played on my Iphone 8Plus. 
 
 
 ## Technologies Used 
@@ -193,8 +191,7 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 
 ## Credits 
 ### Content
-### Code
-* Memory game tutorial from [Udemy](https://www.udemy.com/).
+* Most of the functionality implement in my game are things I learned from a memory game tutorial from [Udemy](https://www.udemy.com/).
 * 3D flip ard code was taken from [w3schools](https://www.w3schools.com/).
 * JavaScript shuffle function was taken from [w3resource](https://www.w3resource.com/).
 * I got help on fixing errors and hints on how to solve problems from [Stack Overflow](https://stackoverflow.com/) and [Slack](https://slack.com/intl/en-dk/).
