@@ -128,7 +128,8 @@ The site was tested in the following devices to ensure the site is compatible an
  These errors are not yet fixed: 
 
 1. During the manual testing I realised that when the cards are being clicked too fast, some of them stay flipped even if they don't match. When that happens the user is unable to win the game. Due to time constraints I was not able to fix this error.
-2. During the manual testing I realised that the flipping and losing sound is not being played on my Iphone 8Plus. 
+2. During the manual testing I realised that the flipping and losing sound is not being played on my Iphone 8Plus and Safari Browser.
+3. Flipping sound is not being played in Safari Browser.
 
 
 ## Technologies Used 
