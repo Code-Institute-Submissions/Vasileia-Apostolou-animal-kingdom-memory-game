@@ -21,7 +21,7 @@ Milestone Project : Interactive Frontend Development - Code Institute
     - [**Functionality**](#Functionality)
     - [**Existing Features**](#Existing-Features)
     - [**Features Left To Implement**](#Features-Left-To-Implement)
-- [**Testing**](##Testing)
+- [**Testing**](#Testing)
     - [**Browsers**](#Browsers)
     - [**Devices**](#Devices)
     - [**Manual Testing**](#Manual-Testing)

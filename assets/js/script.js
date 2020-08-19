@@ -18,7 +18,7 @@ const congratsSound = new Audio("assets/sounds/congrats.wav");
 
 // Variables for timer countdown
 let countdown;
-let secondsInput = 50;
+let secondsInput = 100;
 let seconds = secondsInput;
 let secondsLeft = $(".seconds-left");
 

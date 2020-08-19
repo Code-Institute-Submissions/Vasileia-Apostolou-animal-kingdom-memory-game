@@ -94,18 +94,13 @@ body {
 .play-again-button, .exit-button {
     cursor: pointer;
     font-family: 'Lobster', 'Courier New', Courier, monospace;
-    font-size: 1.4em;
-    margin-left: 18%;
-    margin-right: 5%;
-    justify-content: center;
-    text-align: center;
-    float: center;
-    margin-top: 3%;
+    font-size: 1.2em;
+    margin-left: 10%;
  }
 
 .exit-button {
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 9%;
+    padding-right: 9%;
  }
 
 .try-again-button {
@@ -249,19 +244,17 @@ body {
  }
 
 .play-again-button, .exit-button{
-    float: center;
-   text-align: center;
-   justify-content: center;
    font-size: 1.2rem;
+   margin-left: 10%;
  }
 
 .exit-button {
    padding: 0 13%;
  }
 
-/*.try-again-button {
-    margin-left: 33%;
- }
+.try-again-button {
+    margin-left: 35%;
+}
 
 .clapping-iframe {
     width: 70%;
@@ -273,7 +266,7 @@ body {
     width: 90%;
     margin-top: 5%;
     margin-left: 5%;
- }*/
+ }
 
 body {
     min-height: 100vh;
@@ -294,9 +287,9 @@ body {
  }
 
 .flip-card-front {
-    background-image: url("../images/butterflies/butterfly-mobile.jpg");
-    width: 70px;
-    height: 70px;
+    /*background-image: url("../images/butterflies/butterfly-mobile.jpg");*/
+    width: 100%;
+    height: 100%;
  }
 
 .flip-card-inner {
