@@ -161,9 +161,6 @@ Balsamiq was used to create wireframes.
 
 Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. DevTools can help you edit pages on-the-fly and diagnose problems quickly, which ultimately helps you build better websites, faster. Google Chrome's Dev Tools was used in the building process of this project.
 
-5. [Balsamiq](https://balsamiq.com/)
-
-Balsamiq Wireframes is a rapid low-fidelity UI wireframing tool that reproduces the experience of sketching on a notepad or whiteboard, but using a computer. Balsamiq wireframes was used in producing the wireframes for this project.
 ### Libraries 
 1. Sound icon was obtained from [Font Awesome](https://fontawesome.com/).
 2. Hover CSS Animations for buttons were taken from [Hover.css](http://ianlunn.github.io/Hover/).
@@ -191,7 +188,7 @@ To cut ties with this GitHub repository, type `git remote rm origin` into the te
 
 ## Credits 
 ### Content
-* Most of the functionality implement in my game are things I learned from a memory game tutorial from [Udemy](https://www.udemy.com/).
+* Most of the functionality implement in my game are things I learned from [Udemy](https://www.udemy.com/).
 * 3D flip ard code was taken from [w3schools](https://www.w3schools.com/).
 * JavaScript shuffle function was taken from [w3resource](https://www.w3resource.com/).
 * I got help on fixing errors and hints on how to solve problems from [Stack Overflow](https://stackoverflow.com/) and [Slack](https://slack.com/intl/en-dk/).
