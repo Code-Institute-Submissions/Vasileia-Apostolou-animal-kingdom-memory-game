@@ -41,7 +41,7 @@ Milestone Project : Interactive Frontend Development - Code Institute
 ## About My Project
 I am a Full Stack Web Developer student and this is my memory game created for my second Milestone Project. It's a single page application with a card matching game that requires concentration and a good memory in order to to win the game before the time finishes.
 ## Demo 
-
+![My game's demo](assets/images/demo-screenshot.png)
 ## UX
 ### User Stories  
 * I want a game that improves my memory.
